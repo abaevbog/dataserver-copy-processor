@@ -1,0 +1,16 @@
+{
+  "name": "dataserver-copy-processer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-sqs": "^3.362.0",
+    "config": "^3.3.9",
+    "node-fetch": "^3.3.1"
+  }
+}

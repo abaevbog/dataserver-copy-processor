@@ -1,0 +1,40 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: >-
+  dataserver-copy-processor {{ node_env }}
+
+Transform:
+- AWS::Serverless-2016-10-31
+
+Resources:
+  ProcessSQS:
+    Type: AWS::Serverless::Function
+    Properties:
+        FunctionName: {{ main_function_name }}
+        Handler: src/main.main
+        Runtime: nodejs18.x
+        Timeout: {{ timeout }}
+        MemorySize: {{ memory_size }}
+        CodeUri: ./
+        Policies:
+        - S3ReadPolicy:
+            BucketName: {{ bucket_name }}
+        Events:
+          DataserverSQSEvent:
+            Type: SQS
+            Properties:
+              Queue: !GetAtt DataserverQueue.Arn
+              BatchSize: {{ batch_size }}
+              FunctionResponseTypes:
+                - ReportBatchItemFailures
+    LogGroup:
+        Type: AWS::Logs::LogGroup
+        DeletionPolicy: Retain
+        Properties:
+        LogGroupName:
+            Fn::Sub: /aws/lambda/${ProcessSQS}
+        RetentionInDays: 14
+
+  DataserverQueue:
+    Type: AWS::SQS::Queue
+    Properties:
+      VisibilityTimeout: {{ visibility_timeout }}

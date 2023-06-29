@@ -1,0 +1,124 @@
+{
+    "libraryUri": "http://localhost/groups/308",
+    "userID": 1,
+    "items": [
+        [
+            {
+                "key": "A367II5R",
+                "version": 6950,
+                "itemType": "book",
+                "title": "unfiled",
+                "creators": [],
+                "abstractNote": "Sed ut perspiciatis unde omnis iste?",
+                "series": "",
+                "seriesNumber": "",
+                "volume": "",
+                "numberOfVolumes": "",
+                "edition": "",
+                "place": "",
+                "publisher": "",
+                "date": "",
+                "numPages": "",
+                "language": "",
+                "ISBN": "",
+                "shortTitle": "",
+                "url": "",
+                "accessDate": "",
+                "archive": "",
+                "archiveLocation": "",
+                "libraryCatalog": "",
+                "callNumber": "",
+                "rights": "",
+                "extra": "",
+                "tags": [
+                    {
+                        "tag": "filed"
+                    }
+                ],
+                "collections": [],
+                "relations": {},
+                "dateAdded": "2023-06-28T15:36:36Z",
+                "dateModified": "2023-06-28T15:36:36Z"
+            }
+        ],
+        [
+            {
+                "key": "I9W5WGKB",
+                "version": 6957,
+                "parentItem": "A367II5R",
+                "itemType": "attachment",
+                "linkMode": "imported_file",
+                "title": "",
+                "accessDate": "",
+                "url": "",
+                "lastPageIndex": "5.5",
+                "note": "",
+                "contentType": "application/pdf",
+                "charset": "",
+                "filename": "",
+                "md5": null,
+                "mtime": null,
+                "tags": [],
+                "relations": {},
+                "dateAdded": "2023-06-28T16:38:36Z",
+                "dateModified": "2023-06-28T16:38:36Z"
+            },
+            {
+                "key": "GEHEESTN",
+                "version": 6952,
+                "parentItem": "A367II5R",
+                "itemType": "attachment",
+                "linkMode": "imported_file",
+                "title": "",
+                "accessDate": "",
+                "url": "",
+                "lastPageIndex": "5.5",
+                "note": "",
+                "contentType": "text/html",
+                "charset": "",
+                "filename": "",
+                "md5": null,
+                "mtime": null,
+                "tags": [],
+                "relations": {},
+                "dateAdded": "2023-06-28T16:37:01Z",
+                "dateModified": "2023-06-28T16:37:01Z"
+            }
+        ],
+        [
+            {
+                "key": "4T8CZ2M9",
+                "version": 6960,
+                "parentItem": "I9W5WGKB",
+                "itemType": "annotation",
+                "annotationType": "note",
+                "annotationComment": "Comment bububububu",
+                "annotationColor": "#ffd400",
+                "annotationPageLabel": "Page label",
+                "annotationSortIndex": "00000|000000|00000",
+                "annotationPosition": "{ \"pageIndex\": 0, \"rects\": [], \"something_irrelevant\": [] }",
+                "tags": [],
+                "relations": {},
+                "dateAdded": "2023-06-28T16:39:04Z",
+                "dateModified": "2023-06-28T16:39:04Z"
+            },
+            {
+                "key": "K32IZ4PF",
+                "version": 6958,
+                "parentItem": "I9W5WGKB",
+                "itemType": "annotation",
+                "annotationType": "highlight",
+                "annotationText": "Kukuku",
+                "annotationComment": "",
+                "annotationColor": "#ffd400",
+                "annotationPageLabel": "Some kinf of label",
+                "annotationSortIndex": "00000|000000|00000",
+                "annotationPosition": "",
+                "tags": [],
+                "relations": {},
+                "dateAdded": "2023-06-28T16:38:45Z",
+                "dateModified": "2023-06-28T16:38:45Z"
+            }
+        ]
+    ]
+}
